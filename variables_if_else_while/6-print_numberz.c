@@ -10,13 +10,14 @@ int main(void)
 {
 	int i;
 
-	for (i = 0; i < 48; i++)
-	{
-		if (i > 57)
-			continue;	
+	i = '0';
 
+	while (i <= '9')
+	{
 		putchar(i);
+		i++;
 
 	}
+	putchar(10);
 	return (0);
 }
