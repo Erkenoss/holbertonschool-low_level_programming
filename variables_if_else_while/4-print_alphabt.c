@@ -20,6 +20,8 @@ int main(void)
 		{
 			c--;
 		}
+		else
+			continue;
 		putchar(c);
 	}
 	return (0);
