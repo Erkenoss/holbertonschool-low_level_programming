@@ -8,19 +8,14 @@
 
 int main(void)
 {
-	int c;
+	int i;
 
-	for (c = 65; c <= 122; c++)
+	for (i = 97; i < 122; i++)
 	{
-		if (c == 101)
-		{
-			c -= 1;
-		}
-		else if (c == 113)
-		{
-			c -= 1;
-		}
-		putchar(c);
+		if (i == 101 || i == 113)
+			continue;
+		putchar(i);
+		putchar(10);
 	}
 	return (0);
 }
