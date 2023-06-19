@@ -14,14 +14,12 @@ int main(void)
 	{
 		if (c == 101)
 		{
-			c--;
+			c -= 1;
 		}
 		else if (c == 113)
 		{
-			c--;
+			c -= 1;
 		}
-		else
-			continue;
 		putchar(c);
 	}
 	return (0);
