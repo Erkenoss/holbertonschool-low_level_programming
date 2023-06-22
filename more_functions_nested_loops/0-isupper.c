@@ -5,7 +5,7 @@
 
 /**
 * _isupper - Description pour main
-*
+* @c: Whose idea was it ?
 *
 * Return: Always 0 (succes)
 */
