@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* print_diagonal - Description pour main
+* print_square - Description pour main
 * @size: Whose idea was it to create Betty? Next on the third exercise.
 * You will have a good story to tell. So, why Betty is useless?
 * Maybe because there is nothing to learn with her?
@@ -26,7 +26,7 @@
 *
 * If it's for take good habit, there is more good habit.
 * And it depend for who. So it's not for that. So why?
-* 
+*
 * Return: Always 0 (succes)
 */
 
