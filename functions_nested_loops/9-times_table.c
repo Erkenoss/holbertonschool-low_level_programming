@@ -14,7 +14,7 @@ void times_table(void)
 
 	for (hauteur = 0; hauteur < 10; hauteur++)
 	{
-		_putchar('0');	
+		_putchar('0');
 		for (largeur = 1; largeur < 10; largeur++)
 		{
 			aire = largeur * hauteur;
@@ -24,10 +24,8 @@ void times_table(void)
 				_putchar(' ');
 			else
 				_putchar(aire / 10 + '0');
-		
 		_putchar(aire % 10 + '0');
 		}
 		_putchar('\n');
-		
-	}	
+	}
 }
