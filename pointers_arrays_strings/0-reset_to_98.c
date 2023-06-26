@@ -2,7 +2,7 @@
 
 /**
 * reset_to_98 - check the code
-* @*n: An int. 
+* @n: An int pointer
 *
 * Return: Always 0.
 */
