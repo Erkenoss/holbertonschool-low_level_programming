@@ -4,7 +4,7 @@
 * _strncat- check the code
 * @dest: a char pointer
 * @src: a char pointer
-* @n: an int bytes 
+* @n: an int bytes
 *
 * Return: Always 0.
 */
