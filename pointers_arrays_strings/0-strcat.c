@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* print_rev - check the code
+* _strcat - check the code
 * @dest: a char pointer
 * @src: a char pointer
 *
@@ -10,18 +10,16 @@
 
 char *_strcat(char *dest, char *src)
 {
-	int len;
-	int len2;
-	int len3;
+	int len = 0;
+	int len2 = 0;
 
-	for (len = 0; src[len] != '\0'; len++)
+	while (dest[len] != '\0')
+		len++;
 
-	for (len2 = 0; dest[len] != '\0'; len++, len2++)
+	while (src[len2] != '\0')
 	{
-		dest[len2] = src[len];
-		len3 = len + len2;	
+		dest[len + len2] = src[len2];
+		len2++;
 	}
-	*dest = dest[len3] + '\0';
-
 	return (dest);
 }
