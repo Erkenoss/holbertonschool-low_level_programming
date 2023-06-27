@@ -16,14 +16,15 @@ int _strcmp(char *s1, char *s2)
 	while (s1[len] && s2[len] != '\0')
 	{
 		if (s1[len] < s2[len])
-			result = -1;
-
+			result = (s1[len] - s2[len]) + '\0';
+		
 		else if (s1[len] == s2[len])
-			result = 0;
+			result = (s1[len] - s2[len]) + '\0';
 
-		else
-			result = 1;
-	len++;
+		else	
+			result = (s1[len] - s2[len]) + '\0';
+		
+		len++;
 
 	}
 	return (result);
