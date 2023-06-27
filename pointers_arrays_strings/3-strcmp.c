@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
-* _strncpy- check the code
-* @dest: a char pointer
-* @src: a char pointer
+* _strcmp- check the code
+* @s1: a char pointer
+* @s2: a char pointer
 *
 * Return: Always 0.
 */
