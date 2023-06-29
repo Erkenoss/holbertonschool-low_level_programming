@@ -14,8 +14,12 @@ unsigned int _strspn(char *s, char *accept)
 
 	while (*s != '\0')
 	{
-		if (*s == *accept)
-			byt++;
+		while (*accept != '\0')
+		{
+			if (*s == *accept)
+				byt++;
+			*accept++;
+		}
 		s++;
 	}
 	return (byt);
