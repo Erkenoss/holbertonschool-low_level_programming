@@ -10,7 +10,7 @@
 
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int byt = 0;
+	unsigned int byt;
 
 	while (*s != '\0')
 	{
