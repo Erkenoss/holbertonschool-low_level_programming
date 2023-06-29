@@ -18,7 +18,7 @@ unsigned int _strspn(char *s, char *accept)
 		{
 			if (*s == *accept)
 				byt++;
-			*accept++;
+			accept++;
 		}
 		s++;
 	}
