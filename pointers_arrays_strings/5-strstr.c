@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* _strstrs- check the code
+* _strstr - check the code
 * @s: a char pointer
 * @accept: a char pointern
 *
@@ -10,19 +10,23 @@
 
 char *_strstr(char *haystack, char *needle)
 {
-	int i;
+	int i = 0;
+	int j;
 
-	while (*haystack != '\0')
+	if (*needle == '\0')
+	       return (NULL);
+
+	while (haystack[i] != '\0')
 	{
-		i = 0;
+		j = 0;
 
-		while (needle[i] != *haystack && needle[i] != '\0')
+		while ((haystack[i + j] == needle[j]) && (needle[j] != '\0'))
 		{
-			i++;
+			j++;
 		}
-		if (needle[i] == *haystack)
-			return (haystack);
-		haystack++;
+		if (needle[j] == '\0')
+		       return (haystack + i);
+		i++;
 	}
 	return (NULL);
 }
