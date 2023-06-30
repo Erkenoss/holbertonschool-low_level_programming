@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
-* _strstr - check the code
-* @s: a char pointer
-* @accept: a char pointern
-*
-* Return: s, the pointer
-*/
+ * _strstr - check the code
+ * @haystack: a char pointer
+ * @needle: a char pointer
+ *
+ * Return: s, the pointer
+ */
 
 char *_strstr(char *haystack, char *needle)
 {
@@ -22,7 +22,7 @@ char *_strstr(char *haystack, char *needle)
 			j++;
 		}
 		if (needle[j] == '\0')
-		       return (haystack + i);
+			return (haystack + i);
 		i++;
 	}
 	return (NULL);
