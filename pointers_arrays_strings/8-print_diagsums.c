@@ -13,7 +13,7 @@ void print_diagsums(int *a, int size)
 	int c = 0;
 	int sum1 = 0;
 	int sum2 = 0;
-	
+
 	while (r < size)
 	{
 		sum1 += *(a + (r * size) + c);
