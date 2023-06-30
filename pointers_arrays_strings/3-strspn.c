@@ -22,7 +22,11 @@ unsigned int _strspn(char *s, char *accept)
 			if (*s == accept[i])
 			{
 				byt++;
-			}	
+			}
+			if (accept[i] == '\0')
+			{
+				return (byt);
+			}
 			i++;
 		}
 		s++;
