@@ -15,3 +15,5 @@ int _sqrt_recursion(int n);
 int is_prime_number(int n);
 
 int sqtr_recursion2(int n, int index);
+
+int integer(int n, int integ);
