@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
-* _puts-recursion - check the code
-* @s: a char pointer to print 
+* _puts_recursion - check the code
+* @s: a char pointer to print
 *
-* Return: dest, (the pointer)
+* Return:
 */
 
 void _puts_recursion(char *s)
