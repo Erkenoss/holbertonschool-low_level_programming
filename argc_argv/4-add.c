@@ -30,6 +30,7 @@ int main(int argc, char *argv[])
 			}
 			index2++;
 		}
+		index++;
 	}
 	for (index = 1; index < argc; index++)
 	{
