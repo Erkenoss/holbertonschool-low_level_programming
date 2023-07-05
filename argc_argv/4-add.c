@@ -11,7 +11,7 @@
 
 int main(int argc, char *argv[])
 {
-	int index = 1;
+	int index = 0;
 	char *s;
 	int result = 0;
 	int index2;
@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
 	while (index < argc)
 	{
 		s = argv[index];
-		index2 = 1;
+		index2 = 0;
 
 		while (s[index2] != '\0')
 		{
