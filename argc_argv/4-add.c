@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
 
 		while (s[index2] != '\0')
 		{
-			if (s[index2] <= '0' || s[index2] >= '9')
+			if (s[index2] <= '0' && s[index2] >= '9')
 			{
 				printf("Error\n");
 				return (1);
@@ -36,6 +36,6 @@ int main(int argc, char *argv[])
 	{
 		result = result + atoi(argv[index]);
 	}
-	printf("%d", result);
+	printf("%d\n", result);
 	return (0);
 }
