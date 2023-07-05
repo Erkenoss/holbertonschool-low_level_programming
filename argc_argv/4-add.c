@@ -16,9 +16,9 @@ int main(int argc, char *argv[])
 	int result = 0;
 	int index2;
 
-	while (index < argc)
+	while (index1 < argc)
 	{
-		s = argv[index];
+		s = argv[index1];
 		index2 = 0;
 
 		while (s[index2] != '\0')
@@ -30,11 +30,11 @@ int main(int argc, char *argv[])
 			}
 			index2++;
 		}
-		index++;
+		index1++;
 	}
-	for (index = 1; index < argc; index++)
+	for (index1 = 1; index1 < argc; index1++)
 	{
-		result = result + atoi(argv[index]);
+		result = result + atoi(argv[index1]);
 	}
 	printf("%d\n", result);
 	return (0);
