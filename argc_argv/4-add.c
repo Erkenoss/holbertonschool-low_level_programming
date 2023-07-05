@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
 	while (index < argc)
 	{
 		s = argv[index];
-		index2 = 0;
+		index2 = 1;
 
 		while (s[index2] != '\0')
 		{
