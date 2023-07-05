@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
 			}
 			index2++;
 		}
-
+	}
 	result = result + atoi(argv[index]);
 
 	printf("%d\n", result);
