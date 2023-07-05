@@ -9,7 +9,7 @@
 * Return: Always 0.
 */
 
-int main(int argc, char __attribute__((unused)) *argv[])
+int main(int argc, char *argv[])
 {
 	int a = atoi(argv[2]);
 	int b = atoi(argv[3]);
