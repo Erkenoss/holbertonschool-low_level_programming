@@ -30,11 +30,10 @@ int main(int argc, char *argv[])
 			index2++;
 		}
 		index++;
-	}
-	
-	for (index = 1; index < argc; index++)
-	{
-		result = result + atoi(argv[index]);
+		for (index = 1; index < argc; index++)
+		{
+			result = result + atoi(argv[index]);
+		}
 	}
 	printf("%d\n", result);
 	return (0);
