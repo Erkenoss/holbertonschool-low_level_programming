@@ -22,19 +22,19 @@ int main(int argc, char *argv[])
 
 		while (s[index2] != '\0')
 		{
-			if (s[index2] <= '0' && s[index2] >= '9')
+			if (s[index2] < '0' || s[index2] > '9')
 			{
 				printf("Error\n");
 				return (1);
 			}
 			index2++;
 		}
-		index++;
 		for (index = 1; index < argc; index++)
 		{
 			result = result + atoi(argv[index]);
 		}
 	}
+	
 	printf("%d\n", result);
 	return (0);
 }
