@@ -29,12 +29,9 @@ int main(int argc, char *argv[])
 			}
 			index2++;
 		}
-		for (index = 1; index < argc; index++)
-		{
-			result = result + atoi(argv[index]);
-		}
-	}
-	
+
+	result = result + atoi(argv[index]);
+
 	printf("%d\n", result);
 	return (0);
 }
