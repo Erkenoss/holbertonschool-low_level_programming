@@ -11,10 +11,11 @@
 
 int main(int argc, char *argv[])
 {
-	int index = 0;
+	int index = 1;
 	char *s;
 	int result = 0;
 	int index2;
+
 	while (index < argc)
 	{
 		s = argv[index];
