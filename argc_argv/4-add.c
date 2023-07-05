@@ -11,7 +11,7 @@
 
 int main(int argc, char *argv[])
 {
-	int index = 0;
+	int index1 = 1;
 	char *s;
 	int result = 0;
 	int index2;
