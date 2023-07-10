@@ -11,19 +11,19 @@
 
 char *create_array(unsigned int size, char c)
 {
-	
+
 	char *t;
 	unsigned int i;
 
 
-	if (size == 0) 
-		return (NULL);	
+	if (size == 0)
+		return (NULL);
 
-	t = malloc(sizeof(char) * (size + 1));
+	t = malloc(sizeof(char) * size);
 
 	if (t == NULL)
 		return (NULL);
-	
+
 	i = 0;
 
 	while (i < size)
@@ -31,6 +31,5 @@ char *create_array(unsigned int size, char c)
 		t[i] = c;
 		i++;
 	}
-
 	return (t);
 }
