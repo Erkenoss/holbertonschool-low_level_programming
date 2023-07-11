@@ -13,35 +13,51 @@ char *str_concat(char *s1, char *s2)
 {
 	char *t;
 	unsigned int size;
-	
+	unsigned int i;
+	unsigned int j;
+
 	if ((s1 == NULL) && (s2 == NULL))
 		return (NULL);
 	size = totSize(s1, s2);
-	
+
 	t = malloc(sizeof(char) * size);
 
 	if (t == NULL)
 		return (NULL);
+	i = 0;
+	j = 0;
+
+	while (s1[i] != '\0')
+	{
+		t[i] = s1[i];
+		i++;
+	}
+	while (s2[j] != '\0')
+	{
+		t[i] = s2[j];
+		j++;
+		i++;
+	}
 	return (t);
 }
 
 int totSize(char *chaine1, char *chaine2)
 {
-	unsigned int lench1 = 0;
-	unsigned int lench2;
+	unsigned int len_ch1 = 0;
+	unsigned int len_ch2;
 
-	while (chaine1[lench1] != '\0')
+	while (chaine1[len_ch1] != '\0')
 	{
-		lench1++;
+		len_ch1++;
 	}
 
 
-	lench2 = lench1;
+	len_ch2 = len_ch1;
 
-	while (chaine2[lench2] != '\0')
+	while (chaine2[len_ch2] != '\0')
 	{
-		lench2++;
+		len_ch2++;
 	}
 
-	return (lench2 + 1);	
+	return (len_ch2 + 1);	
 }
