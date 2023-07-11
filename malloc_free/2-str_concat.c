@@ -15,6 +15,7 @@ char *str_concat(char *s1, char *s2)
 	unsigned int size;
 	unsigned int i;
 	unsigned int j;
+
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
@@ -43,6 +44,14 @@ char *str_concat(char *s1, char *s2)
 	t[i] = '\0';
 	return (t);
 }
+
+/**
+* totSize - lenght of two chains s1 and s2
+* @chaine1: pointer sur s1
+* @chaine2: pointer sur s2
+*
+* Return: A pointer
+*/
 
 int totSize(char *chaine1, char *chaine2)
 {
