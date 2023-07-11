@@ -2,12 +2,12 @@
 #include <stdlib.h>
 
 /**
-* string_nconcat - frees the memory allocate for the gridcreated by alloc_grid()
+* string_nconcat - return t after concat s1 and s2 bytes n
 *
 * @s1: first string
 * @s2: second string
-* @i: an unsigned int
-*
+* @n: an unsigned int
+* Return: t
 */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
@@ -50,7 +50,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 * @chaine1: pointer sur s1
 * @chaine2: pointer sur s2
 * @b: nbr bytes need in t
-* 
+*
 * Return: A pointer
 */
 
