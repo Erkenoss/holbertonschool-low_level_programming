@@ -15,9 +15,11 @@ char *str_concat(char *s1, char *s2)
 	unsigned int size;
 	unsigned int i;
 	unsigned int j;
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
 
-	if ((s1 == NULL) && (s2 == NULL))
-		return (NULL);
 	size = totSize(s1, s2);
 
 	t = malloc(sizeof(char) * size);
@@ -39,7 +41,6 @@ char *str_concat(char *s1, char *s2)
 		i++;
 	}
 	t[i] = '\0';
-
 	return (t);
 }
 
@@ -61,5 +62,5 @@ int totSize(char *chaine1, char *chaine2)
 		len_ch2++;
 	}
 
-	return (len_ch2 + 1);	
+	return (len_ch2 + 1);
 }
