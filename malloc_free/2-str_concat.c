@@ -12,9 +12,7 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *t;
-	unsigned int size;
-	unsigned int i;
-	unsigned int j;
+	unsigned int size, i, j;
 
 	if (s1 == NULL)
 		s1 = "";
@@ -53,23 +51,19 @@ char *str_concat(char *s1, char *s2)
 * Return: A pointer
 */
 
-int totSize(char *chaine1, char *chaine2)
+unsigned int totSize(char *chaine1, char *chaine2)
 {
 	unsigned int len_ch1 = 0;
-	unsigned int len_ch2;
+	unsigned int len_ch2 = 0;
 
 	while (chaine1[len_ch1] != '\0')
 	{
 		len_ch1++;
 	}
 
-
-	len_ch2 = len_ch1;
-
 	while (chaine2[len_ch2] != '\0')
 	{
 		len_ch2++;
 	}
-
-	return (len_ch2 + 1);
+	return (len_ch1 + len_ch2 + 1);
 }
