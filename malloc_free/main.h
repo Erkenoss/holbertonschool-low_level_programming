@@ -6,4 +6,4 @@ char *_strdup(char *str);
 char *str_concat(char *s1, char *s2);
 unsigned int totSize(char *chaine1, char *chaine2);
 int **alloc_grid(int width, int height);
-
+void free_grid(int **grid, int height);
