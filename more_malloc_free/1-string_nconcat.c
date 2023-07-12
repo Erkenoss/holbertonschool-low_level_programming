@@ -62,15 +62,9 @@ unsigned int totSize(char *chaine1, char *chaine2, unsigned int b)
 	while (chaine1[len_ch1] != '\0')
 		len_ch1++;
 
-	while (chaine2[len_ch2] != '\0')
+	while (chaine2[len_ch2] != '\0' && len_ch2 < b)
 		len_ch2++;
 
-	if (b >= len_ch2)
-	{
-		b = len_ch2;
-		return (len_ch1 + b + 1);
-	}	
-	else
-		len_ch2 = b;
 	return (len_ch1 + len_ch2 + 1);
+
 }
