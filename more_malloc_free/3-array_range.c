@@ -1,12 +1,10 @@
 #include "main.h"
-#include <stdlib.h>
-#include <stdio.h>
 
 /**
 * array_range - return t after init all memb of size to 0
 *
-* @nmemb: nbr element in tab
-* @size: size of each element
+* @min: start of tab
+* @max: int max end of tab
 *
 * Return: t
 */
@@ -26,7 +24,7 @@ int *array_range(int min, int max)
 
 	while (min <= max)
 	{
-		t[i] = min;	
+		t[i] = min;
 		min++;
 		i++;
 	}
