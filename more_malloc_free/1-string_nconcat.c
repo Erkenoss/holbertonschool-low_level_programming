@@ -27,7 +27,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	while (s1[len_ch1] != '\0')
 		len_ch1++;
 
-	while (s2[len_ch2] != '\0' || len_ch2 < n)
+	while  (len_ch2 < n)
 		len_ch2++;
 
 	size = len_ch1 + len_ch2 + 1;
