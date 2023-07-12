@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
-* calloc - return t
+* _calloc - return t after init all memb of size to 0
 *
 * @nmemb: nbr element in tab
 * @size: size of each element
