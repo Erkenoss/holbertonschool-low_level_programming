@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-struct dog 
+struct dog
 {
 	char *name;
 	char *owner;
