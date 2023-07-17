@@ -4,8 +4,8 @@
 
 /**
  * free_dog - create a new dog
- * 
- * @d: pointer to dog_t 
+ *
+ * @d: pointer to dog_t
  */
 
 void free_dog(dog_t *d)
