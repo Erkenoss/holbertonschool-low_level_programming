@@ -12,7 +12,7 @@
 
 int int_index(int *array, int size, int (*cmp)(int))
 {
-	int index; 
+	int index;
 	int index2;
 
 	if (size <= 0 || array == 0 || (*cmp) == 0)
