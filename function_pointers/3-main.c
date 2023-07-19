@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
 	first = atoi(argv[1]);
 	second = atoi(argv[3]);
 
-	if (strlen(argv[2]) != 1)
+	if (strlen(argv[2]) != 1 || strcmp(argv[2], ".") == 0)
 	{
 		printf("Error\n");
 		exit(99);
