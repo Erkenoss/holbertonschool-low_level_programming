@@ -12,11 +12,16 @@
 
 int main(int argc, char *argv[])
 {
+	int first, second;
+
 	if (argc != 4)
 	{
 		printf("Error\n");
 		exit(98);
 	}
+	first = atoi(argv[1]);
+	second = atoi(argv[3]);
+
 	if (strlen(argv[2]) != 1)
 	{
 		printf("Error\n");
@@ -27,8 +32,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(100);
 	}
-
-	printf("%d\n", (*get_op_func(argv[2]))(atoi(argv[1]), atoi(argv[3])));
+	printf("%d\n", (*get_op_func(argv[2]))(first, second));
 
 	return (0);
 }

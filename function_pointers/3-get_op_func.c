@@ -4,7 +4,7 @@
 /**
  * get_op_func - check the function we need to call and call it
  * @s: operator passed to the function like + or -
- * 
+ *
  * Return: return the pointer function according the operator
  */
 
@@ -21,7 +21,6 @@ int (*get_op_func(char *s))(int, int)
 	int i;
 
 	i = 0;
-
 	while (ops[i].op != NULL)
 	{
 		if (strcmp(ops[i].op, s) == 0)
