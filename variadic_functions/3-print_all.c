@@ -21,7 +21,7 @@ void print_all(const char * const format, ...)
 	va_list args;
 
 	va_start(args, format);
-	while (format[check] != '\0')
+	while (format != NULL && format[check] != '\0')
 	{
 		check2 = 0;
 		while (tab[check2].str != NULL)
