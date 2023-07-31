@@ -37,7 +37,8 @@ list_t *add_node(list_t **head, const char *str)
 		{
 			actual = actual->next;
 		}
-	actual->next = new_node;
+		actual->next = new_node;
+		new_node->prev = actual;
 	}
-	return (new_node);
+	return (actual);
 }
