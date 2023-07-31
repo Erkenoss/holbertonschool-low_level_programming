@@ -3,7 +3,7 @@
 /**
  * print_list - print all the element of node
  *
- * @list_t *h: pointer of constant type list_t
+ * @h: pointer of constant type list_t
  *
  * Return: The size of the struct.
  */
@@ -16,12 +16,15 @@ size_t print_list(const list_t *h)
 
 	if (ptr == NULL)
 	{
-		printf("[0] (nil)");
 		return (count_element);
+	}
+	if (ptr->str == NULL)
+	{
+		printf("[%u] %s\n", ptr->len, "(nil)");
 	}
 	while (ptr != NULL)
 	{
-		printf("[%u] %s\n", ptr->len ,ptr->str);
+		printf("[%u] %s\n", ptr->len, ptr->str);
 		index_str++;
 		count_element++;
 		ptr = ptr->next;
