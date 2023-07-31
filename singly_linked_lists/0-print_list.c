@@ -14,7 +14,7 @@ size_t print_list(const list_t *h)
 	int index_str = 0;
 	const list_t *ptr = h;
 
-	if (ptr == NULL)
+	if (h == NULL)
 	{
 		return (count_element);
 	}
