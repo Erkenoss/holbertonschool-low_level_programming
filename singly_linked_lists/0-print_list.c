@@ -8,9 +8,13 @@
  * Return: The size of the struct.
  */
 
-void print_list(const list_t *h)
+size_t print_list(const list_t *h)
 {
+	size_t count_element = 0;
 	const list_t *ptr = h;
+
+	if (h == NULL)
+		return (count_element);
 
 	while (ptr != NULL && ptr->next != NULL)
 		ptr = ptr->next;
@@ -25,6 +29,8 @@ void print_list(const list_t *h)
 		{
 			printf("[%u] %s\n", ptr->len, "(nil)");
 		}
+		count_element++;
 		ptr = ptr->prev;
 	}
+	return (count_element);
 }
