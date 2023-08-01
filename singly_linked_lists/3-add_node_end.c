@@ -2,7 +2,7 @@
 
 
 /**
- * add_node - function which return the adress of the new element or if failed
+ * add_node_end - function which return the adress of the new element or if failed
  *
  * @head: pointer of pointer of type list.
  * @str: string passed for create a new node.
