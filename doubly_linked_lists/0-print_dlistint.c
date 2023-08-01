@@ -16,8 +16,8 @@ size_t print_dlistint(const dlistint_t *h)
 	if (h == NULL)
 		return (count_node);
 
-	while (ptr != NULL && ptr->next != NULL)
-		ptr = ptr->next;
+/**	while (ptr != NULL && ptr->next != NULL)
+		ptr = ptr->next; */
 
 	while (ptr != NULL)
 	{
@@ -30,7 +30,7 @@ size_t print_dlistint(const dlistint_t *h)
 			printf("%d\n", ptr->n);
 		}
 		count_node++;
-		ptr = ptr->prev;
+		ptr = ptr->next;
 	}
 	return (count_node);
 }
