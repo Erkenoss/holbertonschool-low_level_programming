@@ -2,9 +2,9 @@
 
 /**
  * free_list - free all the node
- * 
+ *
  * @head: start of the list
- * 
+ *
  * Return: no return, void function
  */
 
