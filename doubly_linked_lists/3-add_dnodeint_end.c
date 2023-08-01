@@ -1,11 +1,11 @@
 #include "lists.h"
 
 /**
- * add_node_end - function which return the adress
+ * add_dnodeint_end - function which return the adress
  * of the new element or if failed
  *
  * @head: pointer of pointer of type list.
- * @str: string passed for create a new node.
+ * @n: int passed for create a new node.
  *
  * Return: Always 0.
  */
