@@ -57,7 +57,7 @@ void read_write(const char *src, const char *dest)
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", dest);
 			_close(fd_src);
 			_close(fd_dest);
-			exit(98);
+			exit(99);
 		}
 	}
 	if (bytes_read == -1)
@@ -83,7 +83,7 @@ void _close(int fd)
 {
 	if (close(fd) == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close file descriptor %d\n", fd);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
 		exit(100);
 	}
 }
