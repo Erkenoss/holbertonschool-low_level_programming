@@ -1,7 +1,7 @@
 #include "hash_tables.h"
 
 /**
- * hash_table_get - search the value 
+ * hash_table_get - search the value
  * associated to the key
  *
  * @ht: pointer on the hash table
