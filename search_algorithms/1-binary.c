@@ -12,22 +12,16 @@
 
 int binary_search(int *array, size_t size, int value)
 {
-	unsigned int left;
-	unsigned int right;
-	unsigned int middle;
-	unsigned int index;
+	unsigned int left = 0;
+	unsigned int right = size - 1;
+	unsigned int middle = 0;
+	unsigned int index = 0;
 
 	if (array == NULL || size < 2)
 		return (-1);
 
-	left = 0;
-	right = size - 1;
-	index = 0;
-	middle = 0;
-
 	while (left <= right)
 	{
-
 		printf("Searching in array: ");
 		for (index = left; index <= right; index++)
 		{
